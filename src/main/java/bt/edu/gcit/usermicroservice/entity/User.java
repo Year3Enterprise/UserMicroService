@@ -6,13 +6,13 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import jakarta.persistence.ManyToOne;
+// import jakarta.persistence.ManyToOne;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.JoinTable;
 import java.util.HashSet;
 import java.util.Set;
-import bt.edu.gcit.usermicroservice.entity.Role;
+// import bt.edu.gcit.usermicroservice.entity.Role;
 import jakarta.persistence.FetchType;
 
 @Entity

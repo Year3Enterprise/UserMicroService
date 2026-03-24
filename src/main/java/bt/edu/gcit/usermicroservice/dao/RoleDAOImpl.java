@@ -19,7 +19,6 @@ public class RoleDAOImpl implements RoleDAO {
 
     @Override
     public void addRole(Role role) {
-        // TODO Auto-generated method
         entityManager.persist(role);
     }
 }
