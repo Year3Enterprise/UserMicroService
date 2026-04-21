@@ -4,8 +4,6 @@ import bt.edu.gcit.usermicroservice.entity.User;
 import org.springframework.stereotype.Repository;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import jakarta.persistence.TypedQuery;
 import java.util.List;
 import bt.edu.gcit.usermicroservice.exception.UserNotFoundException;
@@ -15,9 +13,7 @@ public class UserDAOImpl implements UserDAO {
     @PersistenceContext
     private EntityManager entityManager;
 
-    @Autowired
-    public UserDAOImpl(EntityManager entityManager) {
-        this.entityManager = entityManager;
+    public UserDAOImpl() {
     }
 
     @Override
@@ -66,4 +62,5 @@ public class UserDAOImpl implements UserDAO {
         user.setEnabled(enabled);
         entityManager.persist(user);
     }
+
 }

@@ -18,4 +18,5 @@ public interface UserService {
     void uploadUserPhoto(int id, MultipartFile photo) throws IOException;
 
     User findByID(int theId);
+
 }
